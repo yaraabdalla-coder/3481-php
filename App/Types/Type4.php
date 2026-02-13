@@ -2,9 +2,9 @@
 namespace App\Types; 
 class Type4
 {
-    public static function sea()
+    public static function deleat()
 {
-return "sead";
+return "delated";
 }
 }
     
