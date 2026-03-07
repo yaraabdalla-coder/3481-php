@@ -1,26 +1,21 @@
 <?php
-////                Conditions                          //// 
-// Ternary operator // logical condition ? " " : " "
-//if stament = if some condition is true , do something . 
-//              if condition is false, don't do it .
+////                Logical operators                         //// 
+// Logical operators = combine conditional statements.
+// if(conditiona1 && consition2 ).
 
-$age = 21;
+// && = True if both conditions are true .  
+// || = True if at least one codition is true. 
+//  ! = True if false. False if true .
 
-if ($age == 0) {
-    echo "you are {$age} ,So you were just born";
-} elseif ($age <= 6 & $age > 0) {
-    echo "you are {$age} ,So too young to enter this website";
-} elseif ($age >= 100) {
-    echo "you are{$age} ,So you too old to enter this website";
-} elseif ($age >= 6) {
-    echo "you are {$age} ,So you allowed to enter this website";
+
+$age = 18;
+$citizen = false; // null != False 
+
+if ($age >= 18 && $citizen == true) { // use "==" (Used with if statement to comparision)  
+    //                                     Don't use "=" (Used to assign) 
+    echo "you can vote";
+} elseif ($age <= 18 || $citizen == false) {
+    echo "you can't vote";
 } else {
-    echo "you not allowed to enter this website";
+    echo "Get out of here :)";
 }
-
-// Ternary operator // logical condition ? " " : " "
-$mobilePrice = "27000";
-$wallet = "0+";
-echo $wallet >= $mobilePrice
-    ? "You have EGP$wallet, You can buy it :)<hr >"
-    : "Mobile price is $mobPrice, and you have $wallet, so you are too pooooor<hr >";
