@@ -36,3 +36,22 @@ for($i = 1; $i <= $h; $i++){
     echo "\n";
 }
 
+
+# Array Filtering:
+$numbers = [35, 45, 52, 55, 60, 58, 15, 47];
+$target = 50;
+
+foreach($numbers as $num => $value){
+    if ($value > $target){
+        echo "This number is greater than $target";
+    }
+}
+
+
+
+
+
+
+
+
+
